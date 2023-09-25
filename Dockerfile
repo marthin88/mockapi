@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["json-server", "--watch", "./db.json", "--port", "8080"]
+CMD ["npm", "start", "./server.js", "--port=8080"]

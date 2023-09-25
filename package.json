@@ -12,6 +12,7 @@
   "dependencies": {
     "faker": "^6.6.6",
     "json-server": "^0.17.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "request": "^2.88.2"
   }
 }
