@@ -8,4 +8,5 @@ RUN npm install -g json-server
 
 EXPOSE 8080
 
-CMD json-server https://raw.githubusercontent.com/marthin88/mockapi/main/db.json --port 8080 --middlewares server.js --quiet
+CMD ["json-server", "https://raw.githubusercontent.com/marthin88/mockapi/main/db.json","--host","0.0.0.0", "--port", "8080","--middlewares","server.js"]
+
