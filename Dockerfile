@@ -2,12 +2,10 @@ FROM node:12.6
 
 WORKDIR /usr/src/app
 
-COPY package.json .
+COPY server.js .
 
-RUN npm install
-
-COPY . . 
+RUN npm install -g json-server
 
 EXPOSE 8080
 
-CMD ["npm", "start", "./server.js", "--port=8080"]
+CMD ["json-server", "https://raw.githubusercontent.com/marthin88/mockapi/main/db.json", "--port", "8080","--middlewares","server.js"]
