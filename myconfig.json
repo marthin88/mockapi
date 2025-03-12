@@ -2,7 +2,6 @@
   "log": {},
   "dns": {},
   "ntp": {},
-  "certificate": {},
   "endpoints": [],
   "inbounds": [],
   "outbounds": [],
